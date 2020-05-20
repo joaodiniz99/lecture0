@@ -3,11 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>My Webpage!</title>
+        <style media="screen">
+            @media print {
+                .screen-only{
+                    display: none;
+                }
+            }
+        </style>
     </head>
     <body>
-        Hello, world!Hello, world Again! ola
-        Hello, blyat!
-        Pull pela 2ª vez
-        Here is a new feature
+        <p>This is a paragraph!</p>
+        <p>This is another paragraph</p>
+        <p class="screen-only">This paragraph won't appear when you print the page!</p>
     </body>
 </html>
